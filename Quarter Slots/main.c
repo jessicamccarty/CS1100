@@ -26,8 +26,8 @@ int main(void) {
 	double value = ( quarters * 0.25);	
 
 	printf("Welcome to the Betting Game!\n");
-	printf("You have $%.0f worth of quarters.\n", value);
-	printf ("You have %d quarters.\n", quarters);	
+	printf("You have $%.0f worth of quarters.\n\n", value);
+	printf ("You have %d quarters ($%.2f).\n", quarters, value);	
 
 	while (quarters > 0) {
 		// Enter number of quarters to bet
@@ -76,7 +76,7 @@ int getBet(int balance) {
 		printf("Enter the number of quarters to bet (or 0 to cash out): ");
 		scanf("%d", &bet);
 		if (bet < 0 || bet > balance) {
-			printf("Invalid bet. Please enter a valid numbers of quarters.\n");
+			printf("Invalid bet. Please enter a valid number of quarters.\n");
 		}
 	}
 		while (bet < 0 || bet > balance);
@@ -86,22 +86,22 @@ int getBet(int balance) {
 // Update Balance Function
 void updateBalance(int *quarters, int bet, int outcome) {
 	if (outcome < 50) {
-		printf("You lose!\n");
+		printf("You lose!\n\n");
 		// Not subtracting when losing.
 		*quarters -= bet;
 	} 
 	
 	else if (outcome <= 74) {
-		printf("You get your money back!\n");
+		printf("You get your money back!\n\n");
 		*quarters += bet;
 	}
 	
 	else if (outcome <= 94) {
-		printf("You double your money!\n");
+		printf("You double your money!\n\n");
 		*quarters += bet * 2;
 	}
 	else {
-		printf("Jackpot! You triple your money!\n");
+		printf("Jackpot! You triple your money!\n\n");
 		*quarters += bet * 3;
 	}
 }
