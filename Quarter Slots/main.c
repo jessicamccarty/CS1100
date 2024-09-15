@@ -65,7 +65,7 @@ int main(void) {
 
 // Player Balance Function
 void displayBalance(int quarters) {
-	printf("You have %d quarters ($%.2f)\n", quarters, quarters * 0.25);
+	printf("You have %d quarters ($%.2f).\n", quarters, quarters * 0.25);
 }
 
 // Player Bet Function
