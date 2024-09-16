@@ -87,7 +87,6 @@ int getBet(int balance) {
 void updateBalance(int *quarters, int bet, int outcome) {
 	if (outcome < 50) {
 		printf("You lose!\n\n");
-		// Not subtracting when losing.
 		*quarters -= bet;
 	} 
 	
