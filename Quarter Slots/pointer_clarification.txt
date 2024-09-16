@@ -1,0 +1,5 @@
+Why did I use pointers for quarters instead of creating a function?
+
+By passing a pointer to quarters, updateBalance can directly modify the variable that main is using. If quarters were passed by value, the function would only work with a copy 
+of the variable. Chaanges maade to this copy would not affect the original quarters variable in main.
+
