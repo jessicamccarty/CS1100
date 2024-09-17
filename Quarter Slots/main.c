@@ -105,4 +105,3 @@ void updateBalance(int *quarters, int bet, int outcome) {
 	}
 }
 
-
