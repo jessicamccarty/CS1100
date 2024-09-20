@@ -20,11 +20,11 @@ int main(void) {
 
     // Input: Prompt the user to enter a password
     do {
-        prirntf("Enter a password: ");
+        printf("Enter a password: ");
         scanf("%s", userPassword);
 
     // Processing: Check if the entered password matches either the stored password or the alternate password
-    isValaid = (strcmp(userPassword, storedPassword) == 0 || strcmp(userPassword, alternatePassword) == 0) ? 1 : 0;
+    isValid = (strcmp(userPassword, storedPassword) == 0 || strcmp(userPassword, alternatePassword) == 0) ? 1 : 0;
 
     if (!isValid) {
         attempts_cnt++;
