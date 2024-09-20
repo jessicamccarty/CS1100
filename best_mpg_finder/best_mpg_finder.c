@@ -56,7 +56,7 @@ int main(void) {
         float total_gallons = 0.0;
         // the inner loop, loops over columns to accumulate miles and gallons
         for (int sample_idx = 0; sample_idx < NUM_SAMPLES; sample_idx++) {
-            total miles += mileage[car_idx][sample_idx];
+            total_miles += mileage[car_idx][sample_idx];
             total_gallons += gasoline[car_idx][sample_idx];
         }
         // for each car, computer the average MPG and store
@@ -76,12 +76,12 @@ int main(void) {
 
     // Display the results
     printf("Average miles per gallon (MPG) for each car:\n");
-    printf("Car 1: $.1f\n", avg_mpg[0]);
+    printf("Car 1: %.1f\n", avg_mpg[0]);
     printf("Car 2: %.1f\n", avg_mpg[1]);
     printf("Car 3: %.1f\n", avg_mpg[2]);
 
     // Display the best MPG Car
-    printf("\nThe most economical car is Car %d with an average MG of %.1f\n", (most_economical_car+1), max_avg_mpg);
+    printf("\nThe most economical car is Car %d with an average MPG of %.1f\n", (most_economical_car+1), max_avg_mpg);
 
     return 0;
 
