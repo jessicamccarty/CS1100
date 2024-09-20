@@ -38,7 +38,7 @@ int main() {
 
         // Prompt the user to enter an animal name or 'exit' to quit
         printf("\nEnter an animal name (or 'exit' to quit): ");
-        scanf/("%s", animalName);
+        scanf("%s", animalName);
 
         // Check if the user entered 'exit' to quit the program
         if (strcmp(animalName, "exit") == 0) {
@@ -61,7 +61,7 @@ int main() {
         if (found == ANIMAL_NOT_FOUND) {
             for (int i = 0; i < numFelines; i++) {
                 if (strcmp(animalName, felines[i]) == 0) {
-                    printf("$s is a feline.\n", animalName);
+                    printf("%s is a feline.\n", animalName);
                     found = ANIMAL_FOUND;
                     break;
                 }
@@ -81,7 +81,7 @@ int main() {
 
         // If the animal is not found in any category, print a message
         if (found == ANIMAL_NOT_FOUND) {
-            prinft("%s is not a canine, feline, or rodent.\n", animalName);
+            printf("%s is not a canine, feline, or rodent.\n", animalName);
         }
     
     } while (1);
