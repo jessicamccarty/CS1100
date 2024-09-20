@@ -17,7 +17,7 @@
 int main(void) {
     char userPassword[MAX_PASSWORD_LENGTH];
     char *storedPassword = "password123";
-    char *alternatePassword = "alternate123";
+    char *alternatePassword = "alternate789";
     char *message;
 
     // Input: Prompt the user to enter a password
