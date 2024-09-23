@@ -1,5 +1,5 @@
 // Filename: quarter_slots.c
-// Description: Create a simple quarter-slot machine. Allow the player to place beters using quarters and spin the slot machine reel. The outcome of each spin is determined by a
+// Description: Create a simple quarter-slot machine. Allow the player to place bets using quarters and spin the slot machine reel. The outcome of each spin is determined by a
 // randomly generated number, and the plaayer can win or lose based on the number range. The game continues until the player chooses to cash out or runs out of quarters.
 
 #include <stdio.h>
