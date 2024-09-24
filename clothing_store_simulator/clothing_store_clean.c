@@ -32,6 +32,7 @@ int main(void) {
     float subtotal = 0.0, shipping_cost = 0.0, tax = 0.0, total_cost = 0.0, taxValue = 0.0;  // Variables to store total costs
     
     do {
+        
         // Display menu options to the user
         printf("Enter the type of clothing needed (shirt, shoes, pants).\n");
         printf("Type 'exit' to quit and proceed to shipping details.\n");
@@ -180,4 +181,6 @@ int main(void) {
 
     return 0;  // Indicate successful program execution
 }
+
+
 
