@@ -48,32 +48,29 @@ int main(void) {
         // Determine clothing type using switch statement
         switch (userInput[2])
         {
+        case 'I':
         case 'i':
             if (strcmp(userInput, "shirt") == 0) {
                 printf("Enter the quantity of shirts needed: ");
                 scanf("%d", &shirtQuantity);
                 printf("Clothing item '%s' successfully added to your cart.\n", userInput);
-            } else {
-                printf("Invalid clothing type. Please enter 'shirt', 'shoes', or 'pants'.\n");
-            }
+            } 
                 break;
+        case 'O':
         case 'o':
             if (strcmp(userInput, "shoes") == 0) {
                 printf("Enter the quantity of shoes needed: ");
                 scanf("%d", &shoeQuantity);
                 printf("Clothing item '%s' successfully added to your cart.\n", userInput);
-            } else {
-                printf("Invalid clothing type. Please enter 'shirt', 'shoes', or 'pants'.\n");
-            }
+            } 
                 break;
+        case 'N':
         case 'n':
             if (strcmp(userInput, "pants") == 0) {
                 printf("Enter the quantity of pants needed: ");
                 scanf("%d", &pantsQuantity);
                 printf("Clothing item '%s' successfully added to your cart.\n", userInput);
-            } else {
-                printf("Invalid clothing type. Please enter 'shirt', 'shoes', or 'pants'.\n");
-            }
+            } 
                 break;
 
         default:
