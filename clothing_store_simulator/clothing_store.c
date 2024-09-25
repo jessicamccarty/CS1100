@@ -70,6 +70,11 @@ int main(void) {
         // Read user input for clothing type
         scanf("%s", userInput);
 
+        // Check for exit condition first
+        if (strcmp(userInput, "exit") == 0) {
+            break; // Exit the loop if user inputs "exit"
+    }
+
         // // Check user input and prompt for quantity based on clothing type  CHANGE TO SWITCH STATEMENT TO MEET ASSIGNMENT REQUIREMENTS
         // if (strcmp(userInput, "shirt") == 0) {
         //     printf("Enter the quantity of shirts needed: ");
@@ -95,7 +100,7 @@ int main(void) {
                 scanf("%d", &shirtQuantity);
                 printf("Clothing item '%s' successfully added to your cart.\n", userInput);
             } else {
-                printf("Invalid clothing type. Please enter 'shirt', 'shoes', or 'pants'.");
+                printf("Invalid clothing type. Please enter 'shirt', 'shoes', or 'pants'.\n");
             }
                 break;
         case 'o':
@@ -104,7 +109,7 @@ int main(void) {
                 scanf("%d", &shoeQuantity);
                 printf("Clothing item '%s' successfully added to your cart.\n", userInput);
             } else {
-                printf("Invalid clothing type. Please enter 'shirt', 'shoes', or 'pants'.");
+                printf("Invalid clothing type. Please enter 'shirt', 'shoes', or 'pants'.\n");
             }
                 break;
         case 'n':
@@ -113,21 +118,21 @@ int main(void) {
                 scanf("%d", &pantsQuantity);
                 printf("Clothing item '%s' successfully added to your cart.\n", userInput);
             } else {
-                printf("Invalid clothing type. Please enter 'shirt', 'shoes', or 'pants'.");
+                printf("Invalid clothing type. Please enter 'shirt', 'shoes', or 'pants'.\n");
             }
                 break;
+
         default:
             printf("Invalid clothing type. Please enter 'shirt', 'shoes', or 'pants'.\n");
             break;
         }
+     } while (strcmp(userInput, "exit") != 0); // Loop until 'exit' is entered
 
     //     // If user input is not 'exit', display a success message for adding the clothing item
     //     if (strcmp(userInput, "exit") != 0) {
     //         printf("Clothing item '%s' successfully added to your cart.\n", userInput);
     //     }
     
-    
-    } while (strcmp(userInput, "exit") != 0);  // Repeat the loop until user enters 'exit'
 
     // Calculate subtotal
     subtotal = (shirtQuantity * SHIRT_PRICE) + (shoeQuantity * SHOE_PRICE) + (pantsQuantity * PANTS_PRICE);
