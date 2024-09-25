@@ -41,7 +41,7 @@ int main(void) {
 
 		// Deduct from balance
 		quarters -+ bet;
-
+ 
 		// Generate random number from 1 to 100
 		outcome = rand() % 100 + 1;
 		printf("Reel stopped on the number: %d\n", outcome);
@@ -104,4 +104,7 @@ void updateBalance(int *quarters, int bet, int outcome) {
 		*quarters += bet * 3;
 	}
 }
+
+
+
 
