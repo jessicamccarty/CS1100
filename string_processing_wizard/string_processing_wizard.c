@@ -75,7 +75,7 @@ int main(int argc, char *argv[]) {
                 break;
             case 6:
                 printf("Exiting the program.\n");
-                break;
+                return 0;
             default:
                 printf("Invalid selection. Please try again.\n");    
         } 
