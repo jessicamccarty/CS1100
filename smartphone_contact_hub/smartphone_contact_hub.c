@@ -42,7 +42,7 @@ int main() {
         printf("2. Select Contact\n");
         printf("3. Exit\n");
         printf("Enter your choice: ");
-        scaf("%d", &userInput);
+        scanf("%d", &userInput);
 
         switch (userInput) {
             case 1:
@@ -59,5 +59,5 @@ int main() {
         }
     } while (userInput != 3);
     
-    return 0;
+    return 0;selectContact
 }
