@@ -72,6 +72,7 @@ int main(int argc, char *argv[]) {
                     break;
             case 5:
                 countOccurences(inputString);
+                while(getchar() !='\n');
                 break;
             case 6:
                 printf("Exiting the program.\n"); // Final test with 5/t/6 as inputs is giving incorrect output in grader but works properly when running the code.
