@@ -72,13 +72,13 @@ int main(int argc, char *argv[]) {
                     break;
             case 5:
                 countOccurences(inputString);
-                while(getchar() !='\n');
+                while(getchar() !='\n'); // TERMINATED INPUT TO FIX ERROR
                 break;
             case 6:
-                printf("Exiting the program.\n"); // Final test with 5/t/6 as inputs is giving incorrect output in grader but works properly when running the code.
+                printf("Exiting the program.\n"); // Final test with 5/t/6 as inputs is giving incorrect output in grader but works properly when running the code. CORRECTED
                 return 0; // Attempted to run with "break;" instead of "return 0;", no change in grader.
             default:
-                printf("Invalid selection. Please try again.\n");    
+                printf("Invalid selection. Please try again.\n"); 
         } 
 
         if (choice != 6) {
