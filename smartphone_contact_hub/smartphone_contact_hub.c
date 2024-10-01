@@ -46,7 +46,7 @@ int main() {
 
         switch (userInput) {
             case 1:
-                displayContacts(contacts, countactCount);
+                displayContacts(contacts, contactCount);
                 break;
             case 2:
                 selectContact(contacts, contactCount);
