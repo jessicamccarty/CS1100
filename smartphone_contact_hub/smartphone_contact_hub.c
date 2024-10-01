@@ -59,5 +59,10 @@ int main() {
         }
     } while (userInput != 3);
     
-    return 0;selectContact
+    return 0;
 }
+
+// Function to list contacts
+
+// Function to select contact and complete task
+
